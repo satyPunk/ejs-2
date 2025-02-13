@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
   };
   res.render("index.ejs", data);
 });
+app.get("/push",()=>{
+  res.send("just wanted to push once more");
+})
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
